@@ -1,16 +1,12 @@
 const fs = require('fs')
 const esbuild = require('esbuild')
 const path = require('path')
-const {
-    NodeModulesPolyfillPlugin,
-    NodeGlobalsPolyfillPlugin,
-    NodeResolvePlugin,
-} = require('@esbuild-plugins/all')
+const { NodeModulesPolyfillPlugin } = require('@esbuild-plugins/all')
 
 const plugins = [
     // NodeResolvePlugin({ extensions: ['.js'] }),
     NodeModulesPolyfillPlugin(),
-    NodeGlobalsPolyfillPlugin({ buffer: true }),
+    // NodeGlobalsPolyfillPlugin({ buffer: true }),
 ]
 
 async function main() {
@@ -18,22 +14,14 @@ async function main() {
     const res = await esbuild.build({
         entryPoints: [
             path.resolve('node_modules/cesium/Source/Cesium.js'),
-            path.resolve('node_modules/cesium2/Source/Cesium.js'),
-            require.resolve('safe-buffer'),
             'another.js',
-            'another_one.js',
         ],
         format: 'esm',
         logLevel: 'error',
-        write: true,
-        // keepNames: true,
         plugins,
         minify: false,
         target: 'es2020',
         minifyIdentifiers: true,
-        minifySyntax: false,
-        // inject: [path.resolve(__dirname, 'buffer.js')],
-        minifyWhitespace: false,
         splitting: true,
         bundle: true,
 
