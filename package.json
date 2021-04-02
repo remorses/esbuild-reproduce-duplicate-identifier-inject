@@ -1,15 +1,16 @@
 {
-  "name": "esbuild-reproduce-duplicate-identifier-inject",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/remorses/esbuild-reproduce-duplicate-identifier-inject.git",
-  "author": "remorses <beats.by.morse@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@esbuild-plugins/all": "^0.0.27",
-    "cesium": "1.77.0",
-    "cesium2": "git+https://github.com/nacho-carnicero/cesium#bug/fix-polyfill-compiled",
-    "esbuild": "^0.11.3",
-    "safe-buffer": "^5.2.1"
-  }
+    "name": "esbuild-reproduce-duplicate-identifier-inject",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/remorses/esbuild-reproduce-duplicate-identifier-inject.git",
+    "author": "remorses <beats.by.morse@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "repro": "node build.js"
+    },
+    "dependencies": {
+        "@esbuild-plugins/all": "^0.0.27",
+        "cesium": "1.77.0",
+        "esbuild": "^0.11.3"
+    }
 }
