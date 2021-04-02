@@ -26,8 +26,8 @@ async function main() {
         bundle: true,
 
         outdir: 'out',
-        // outfile: 'out.js',
     })
+    // check errors
     await esbuild.build({
         plugins,
         logLevel: 'error',
