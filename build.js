@@ -27,7 +27,7 @@ async function main() {
 
         outdir: 'out',
     })
-    // check errors
+    // check syntax errors in bundle
     await esbuild.build({
         plugins,
         logLevel: 'error',

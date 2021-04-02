@@ -58,10 +58,6 @@
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.0.tgz#11325a379b6f63b858fed49552fd4178495ee087"
   integrity sha512-SFT3jdUNlLkjxUWwH/0QjLiEsV38hjdDX8oMcX9jZAD8KWNzRLdg6INZE7UMz9O86b2BOHzA3dR8nF+DbonX2Q==
 
-"cesium2@git+https://github.com/nacho-carnicero/cesium#bug/fix-polyfill-compiled":
-  version "1.78.0"
-  resolved "git+https://github.com/nacho-carnicero/cesium#7a8967ac35d306559325f5d4bf4885cc69c5dba5"
-
 cesium@1.77.0:
   version "1.77.0"
   resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.77.0.tgz#c4e2b3c2906dd20f147fe55e57233750bd59b025"
@@ -227,11 +223,6 @@ rollup-pluginutils@^2.8.1:
   integrity sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   dependencies:
     estree-walker "^0.6.1"
-
-safe-buffer@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
-  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 sourcemap-codec@^1.4.4:
   version "1.4.8"
